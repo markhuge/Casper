@@ -17,6 +17,8 @@
     {{! Styles'n'Scripts }}
     <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400" />
+    {{! Syntax highlighting}}
+    <link rel="stylesheet" href="https://s3.amazonaws.com/assets.markhuge.com/css/highlight.css">
 
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
@@ -40,6 +42,11 @@
     {{! The main JavaScript file for Casper }}
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+
+    {{! syntax highlighting}}
+    <script src="https://s3.amazonaws.com/assets.markhuge.com/js/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
 
 </body>
 </html>
